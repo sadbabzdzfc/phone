@@ -5,30 +5,98 @@
 	<title>index1.html</title>
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<style>
-		.box{
-			width: 200px;
-			height: 100px;
-			background-color: pink;
-			color: white;
-			border: 1px solid gold;
+		body{
+			padding-bottom: 50px;
 		}
+		#bar{
+			top:70px;
+			text-align: center;
+		}
+		span>a{
+			color:pink;
+			margin-right: 20px;
+		}
+		h1{
+			text-align: center;
+			background-color: lightgray;
+			font-size:70px;		
+		}
+		img{
+			max-width: 100%;
+		}
+		h3{
+			text-align: center;
+			padding-top: 50px;	
+		}
+
 	</style>
 </head>
 <body>
-	<div class="btn btn-danger btn-xs">불조심</div>
-	<div class="btn btn-warning btn-sm">단무지</div>
-	<div class="btn btn-info btn-md">하늘색</div>
-	<div class="btn btn-primary btn-lg">전자</div>
+<div style="background-color: #002266;">
+	<h4 style="color:white; text-align: center; padding: 10px;">Your laptop needs more Sass. Grab a set of Sass stickers now.</h4>
+</div>
 <div class="container">
 	<div class="row">
+		<div class="col-xs-6">
+			<img src="photo/sass.png">
+		</div>
+		<div id="bar" class="col-xs-6">
+			<span><a href="#">INSTALL</a></span>
+			<span><a href="#">LEARN SASS</a></span>
+			<span><a href="#">BLOG</a></span>
+			<span><a href="#">DOCUMENTATION</a></span>
+			<span><a href="#">GET INVOLVED</a></span>
+		</div>
+	</div>
+	<div class="row" style="padding-bottom: 50px;">
+		<div class="col-xs-12">
+			<h1>CSS with superpowers</h1>	
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-7" style="padding-bottom: 50px;">
+			<img src="photo/sassgla.svg">
+		</div>
+		<div class="col-xs-5">
+			<h3 style="color: #59DA50;">Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12" style="text-align: center; background-color: #F361DC; padding:10px;">
+			<span>Current Releases: </span>
+			<span><a href="#">Dart Sass 1.3.1 </a></span>
+			<span><a href="#">LibSass 3.5.4</a></span>
+			<span><a href="#">Ruby Sass 3.5.6</a></span>
+			<span><a href="#">Implementation Guide</a></span>
+		</div>
+	</div>
+	<div class="row" style="text-align: left; margin-top:50px;">
 		<div class="col-xs-4">
-			<div class="box">1</div>
+			<p>CSS COMPATIBLE</p>
+			<div>Sass is completely compatible with all versions of CSS. We take this compatibility seriously, so that you can seamlessly use any available CSS libraries.</div>
 		</div>
 		<div class="col-xs-4">
-			<div class="box">2</div>
+			<p>FEATURE RICH</p>
+			<p>Sass boasts more features and abilities than any other CSS extension language out there. The Sass Core Team has worked endlessly to not only keep up, but stay ahead.</p>
 		</div>
 		<div class="col-xs-4">
-			<div class="box">3</div>
+			<p>MATURE</p>
+			<div>Sass has been actively supported for over 11 years by its loving Core Team.</div>
+		</div>
+	</div>
+	<br/>
+	<div class="row">
+		<div class="col-xs-4">
+			<p>INDUSTRY APPROVED</p>
+			<div>Over and over again, the industry is choosing Sass as the premier CSS extension language.</div>
+		</div>
+		<div class="col-xs-4">
+			<p>LARGE COMMUNITY</p>
+			<div>Sass is actively supported and developed by a consortium of several tech companies and hundreds of developers.</div>
+		</div>
+		<div class="col-xs-4">
+			<p>FRAMEWORKS</p>
+			<div>There are an endless number of frameworks built with Sass. Compass, Bourbon, and Susy just to name a few.</div>
 		</div>
 	</div>
 </div>

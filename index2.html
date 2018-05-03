@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>index2.html</title>
+	<link rel="stylesheet" href="../css/bootstrap.css"/>
+	<style>
+	/* scroll 을 감시할 요소의 position 속성의 value 를 relative 라고 지정한다. */
+		body{
+			position: relative;
+			background-color: lightgray;
+			padding-bottom: 70px;
+		}
+
+		.spacer{
+			height: 500px;
+			background-color: #cecece;
+		}
+
+		#navbar-example{
+			position: fixed;
+			top: 200px;
+			right: 0;
+			background-color: lightgray;
+			color: gray;
+			opacity: 0.8;
+			font-style: italic;
+			
+		}
+
+		img{
+			max-height:100%;
+			max-width:100%;
+			margin:0 auto;
+		}
+		h1{
+			color:white;
+		}
+		li>a{
+			font-style: italic;
+		}
+	</style>
+</head>
+<!-- scroll 을감시할 요소에 data-xxx 속성을 추가한다. -->
+<body data-target="#navbar-example" data-spy="scroll"
+	data-offset="60">
+<div id="navbar-example">
+	<!-- ul 에 nav 클래스 추가 -->
+	<ul id="myNav" class="nav nav-pills">
+		<li class="active"><a href="#one">Index</a></li>
+		<div class="clearfix"></div>
+		<li><a href="#two">Photo</a></li>
+		<div class="clearfix"></div>
+	</ul>	
+</div>
+<div class="navbar navbar-inverse">
+	<div class="navbar-header">
+		<a href="#" class="navbar-brand">Apple</a>
+		<button class="navbar-toggle" data-toggle="collapse" data-target="#first">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</div>
+	<div class="collapse navbar-collapse" id="first">
+		<!-- 네비게이션 요소 -->
+		<ul class="nav navbar-nav">
+			<li><a href="#">IPhoneX</a></li>
+			<li><a href="#">IPhone8</a></li>
+			<li><a href="#">IPhone7</a></li>
+		</ul>
+	</div>
+</div>
+<div class="container">
+	<h1 style=>IPhone</h1>
+	<div class="navbar navbar-default" style="background-color: lightgray">
+		<form class="navbar-form navbar-right">
+			<div class="form-group">
+				<label class="sr-only" for="search">검색어</label>
+				<input id="search" type="text" class="form-control" placeholder="search.." />
+				<button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+			</div>
+		</form>
+	</div>
+	<div class="row" id="one">
+		<div class="col-xs-8 col-xs-push-2">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+				<!-- Carousel 하단의 동그란 nav 요소  -->
+				<ol class="carousel-indicators">
+					<!-- data-target="Carousel 전체의 선택자" 
+					data-slide-to="컨텐츠 인덱스" -->
+					<li data-target="#myCarousel" data-slide-to="0"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="photo/iphone5.jpg" style="height:700px;"/>
+					</div>
+					<div class="item">
+						<img src="photo/iphone2.jpg" style="height:700px;"/>
+					</div>
+				</div>
+				<!-- 이전, 다음 control UI -->
+				<a href="#myCarousel" class="left carousel-control" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+					<span class="sr-only">이전</span>
+				</a>
+				<a href="#myCarousel" class="right carousel-control" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+					<span class="sr-only">다음</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="two">
+		<h1>Photo</h1>
+		<div class="row">
+			<p>공통 사항:
+				<h4>광학 이미지 흔들림 보정(OIS)</h4>
+				<h4>6매(Six‑element) 렌즈</h4>
+				<h4>슬로 싱크 기능을 갖춘 쿼드-LED True Tone 플래시</h4>
+				<h4>파노라마(최대 6300만 화소)</h4>
+				<h4>사파이어 크리스털 렌즈 커버</h4>
+				<h4>후면 조명 센서</h4>
+				<h4>하이브리드 IR 필터</h4>
+				<h4>Focus Pixels를 갖춘 오토포커스</h4>
+				<h4>Focus Pixels를 갖춘 탭투포커스</h4>
+				<h4>이미지 흔들림 보정을 갖춘 Live Photo</h4>
+				<h4>사진 및 Live Photo 촬영 시 넓은 색상 영역 포착</h4>
+				<h4>향상된 주변 색조 매핑</h4>
+				<h4>몸과 얼굴 인식</h4>
+				<h4>노출 조절</h4>
+				<h4>노이즈 감소</h4>
+				<h4>사진을 위한 자동 HDR</h4>
+				<h4>자동 흔들림 보정</h4>
+				<h4>고속 연사 모드</h4>
+				<h4>타이머 모드</h4>
+				<h4>사진 위치 표시 기능</h4>
+				<h4>촬영 이미지 포맷: HEIF 및 JPEG</h4>
+			</p>
+		</div>
+	</div>
+</div>
+<script src="../js/jquery-3.3.1.js"></script>
+<script src="../js/bootstrap.js"></script>	
+<script src="../js/jquery.smooth-scroll.js"></script>
+<script>
+	$("#myNav a").smoothScroll({
+		offset:-60
+	});
+</script>
+</body>
+</html>
